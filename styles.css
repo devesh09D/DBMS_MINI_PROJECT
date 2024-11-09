@@ -1,0 +1,151 @@
+/* Global Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    overflow-x: hidden;
+}
+
+/* Styling for Main Containers */
+.container, .form-container, .video-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Button and Link Styles */
+.buttons a, .btn, .link {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #6e45e2;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.buttons a:hover, .btn:hover, .link:hover {
+    background-color: #88d3ce;
+    transform: scale(1.05);
+}
+
+/* Form Input Styling */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #6e45e2;
+}
+
+/* Video Container */
+video {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Download Button */
+.video-container .btn {
+    margin-top: 1rem;
+}
+
+/* Feedback & Comments Section */
+.feedback, .comments {
+    margin-top: 2rem;
+}
+
+.feedback input {
+    width: calc(100% - 100px);
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 0.5rem;
+}
+
+.feedback button {
+    width: 80px;
+    padding: 0.6rem;
+}
+
+.comments p {
+    text-align: left;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    background: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border-left: 4px solid #6e45e2;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .container, .form-container, .video-container {
+        padding: 1.5rem;
+    }
+
+    .buttons a, .btn, .link {
+        padding: 0.6rem 1rem;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer style */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
